@@ -30,13 +30,13 @@ public class SwerveSubsystem extends SubsystemBase {
         @Override
         public void periodic() {
                 // This method will be called once per scheduler run
-                SmartDashboard.putNumber(String.valueOf(swerveDrive.getModules()[0].moduleNumber),
+                SmartDashboard.putNumber(swerveDrive.getModules()[0].configuration.name,
                                 swerveDrive.getModules()[0].getAbsolutePosition());
-                SmartDashboard.putNumber(String.valueOf(swerveDrive.getModules()[3].moduleNumber),
+                SmartDashboard.putNumber(swerveDrive.getModules()[3].configuration.name,
                                 swerveDrive.getModules()[3].getAbsolutePosition());
-                SmartDashboard.putNumber(String.valueOf(swerveDrive.getModules()[1].moduleNumber),
+                SmartDashboard.putNumber(swerveDrive.getModules()[1].configuration.name,
                                 swerveDrive.getModules()[1].getAbsolutePosition());
-                SmartDashboard.putNumber(String.valueOf(swerveDrive.getModules()[2].moduleNumber),
+                SmartDashboard.putNumber(swerveDrive.getModules()[2].configuration.name,
                                 swerveDrive.getModules()[2].getAbsolutePosition());
         }
 
